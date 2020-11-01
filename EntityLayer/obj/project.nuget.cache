@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fMI1gtb05aoEhtI39k3lgy1kZ0okequNDh63rb5VxaRFtrcK+ejzTilFhEUwNERiOmZuH9lGZ401Yi8eNQbz4g==",
+  "success": true,
+  "projectFilePath": "D:\\Testapplications\\StudentUI\\EntityLayer\\EntityLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\gagan\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

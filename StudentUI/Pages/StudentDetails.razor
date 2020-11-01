@@ -1,0 +1,86 @@
+﻿@page "/studentDetails/{id}"
+@inherits StudentDetailsBase
+
+@if (Students.StudentName == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
+
+
+    <div class="row justify-content-center m-3">
+        <div class="col-sm-8">
+            <div class="card" style="min-width: 18rem; max-width:70.5%;">
+                <div class="card-header">
+                    <h1>@Students.StudentName</h1>
+                </div>
+
+                <div class="card-body text-center">
+                    <img class="card-img-top" src="images/john.png" />
+
+                    <h4>Student ID : @Students.StudentIdID</h4>
+                    <h4>Age : @Students.Age</h4>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="/" class="btn btn-primary">Back</a>
+                    <button @onclick="() => ShowPopup(Students.StudentIdID)"
+                            class="btn btn-primary m-1">
+                        View
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@if (show)
+{
+    @if (MarksData.Count == 0)
+    {
+        <div class="spinner"></div>
+    }
+    else
+    {
+<div class="modal fade show d-block" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">@Students.StudentName</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        @onclick="() => ClosePopup()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in MarksData.ToList())
+                        {
+                            <tr>
+                                <td>
+                                    @item.subject
+
+                                </td>
+                                <td>
+                                    @item.Marks
+
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+    }
+    
+}

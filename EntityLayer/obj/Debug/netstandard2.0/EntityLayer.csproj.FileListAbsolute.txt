@@ -1,0 +1,9 @@
+D:\Testapplications\StudentUI\EntityLayer\bin\Debug\netstandard2.0\EntityLayer.deps.json
+D:\Testapplications\StudentUI\EntityLayer\bin\Debug\netstandard2.0\EntityLayer.dll
+D:\Testapplications\StudentUI\EntityLayer\obj\Debug\netstandard2.0\EntityLayer.csprojAssemblyReference.cache
+D:\Testapplications\StudentUI\EntityLayer\obj\Debug\netstandard2.0\EntityLayer.AssemblyInfoInputs.cache
+D:\Testapplications\StudentUI\EntityLayer\obj\Debug\netstandard2.0\EntityLayer.AssemblyInfo.cs
+D:\Testapplications\StudentUI\EntityLayer\bin\Debug\netstandard2.0\EntityLayer.pdb
+D:\Testapplications\StudentUI\EntityLayer\obj\Debug\netstandard2.0\EntityLayer.csproj.CoreCompileInputs.cache
+D:\Testapplications\StudentUI\EntityLayer\obj\Debug\netstandard2.0\EntityLayer.dll
+D:\Testapplications\StudentUI\EntityLayer\obj\Debug\netstandard2.0\EntityLayer.pdb

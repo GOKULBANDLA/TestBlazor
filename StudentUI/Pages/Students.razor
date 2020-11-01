@@ -1,0 +1,33 @@
+﻿@page "/"
+
+@inherits StudentsBase
+
+<h3>Students List</h3>
+@if (Students == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
+    @if(Students.ToList().Count == 0){ 
+        <div class="alert-danger">
+            Sorry No Records Available
+        </div>
+    }
+    <div class="card-deck">
+        @foreach (var student in Students)
+        {
+            <div class="card m-3" style="min-width: 18rem; max-width:30.5%;">
+                <div class="card-header">
+                    <h3>@student.StudentName</h3>
+                </div>
+                <img class="card-img-top imageThumbnail" src="images/john.png" />
+                <div class="card-footer text-center">
+                    <a href="@($"studentDetails/{student.StudentIdID}")"
+                       class="btn btn-primary m-1">View</a>
+
+                </div>
+            </div>
+        }
+    </div>
+}
